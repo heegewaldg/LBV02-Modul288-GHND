@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="app.js"></script>
+    <title>Unsere To Do List</title>
+
+</head>
+
+<body>
+
+    <div id="myDIV" class="header">
+        <h2 id="mouseover" onmousedown="mouseDown()" onmouseup="mouseUp()">Niklas und Gregory's To Do List</h2>
+        <input type="text" id="myInput" placeholder="To Do...">
+        <span onclick="newElement()" id="addBtn">Hinzufügen</span>
+    </div>
+
+    <ul id="myUL">
+        <li class="checked">Javascript Website machen</li>
+    </ul>
+
+    <div id="clear-button">
+        <span onclick="removeAll()" id="clear-list">Zurücksetzen</span>
+    </div>
+
+    <div id="gif">
+        <img src="http://i.stack.imgur.com/SBv4T.gif" alt="this slowpoke moves">
+    </div>
+    <form>
+        <div class="formBox">
+            <label for="title"></label>
+            <input type="text" id="title" placeholder="Nutzername" />
+        </div>
+        <div class="formBox">
+            <label for="yr"></label>
+            <input type="number" id="yr" placeholder="Alter" />
+        </div>
+        <div class="formBox">
+            <button id="btn">hinzufügen</button>
+        </div>
+        <div id="msg">
+            <pre></pre>
+        </div>
+    </form>
+
+
+</body>
+
+
+
+</html>
